@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>画布</title>	
+<link rel="stylesheet" href="css/iconfont.css">
+<link rel="stylesheet" href="css/canvas.css">
+</head>
+<body style="background-color:black">
+<nav>
+  画&nbsp;&nbsp;板
+</nav>
+<div class="palette-box">
+	<div class="palette-inner">
+		<div class="toolbar-box">
+			<div class="container">
+				工具栏
+			</div>
+			<ul class="iconbox">
+			  <div class="box1"> 
+				   <div class="inner1">
+				   	 <div class="container1">
+				        操作画板
+			          </div>
+						<li class="marginBottoom" title="新建画板"><span><i class="iconfont new">&#xe6fa;</i></span><div class="horizontal"></li>
+						<div class="vertical"></div>
+						<li class="marginBottoom" title="保存画板"><span><i class="iconfont save">&#xe6e7;</i></span><div class="horizontal"></div></li>
+						<li title="返回"><span><i class="iconfont chexiao">&#xe600;</i></span></li>
+						<div class="vertical"></div>
+						<li title="清除全部"><span><i class="iconfont" id="removeALL">&#xf0020;</i></span></li>
+				   </div>
+				   
+              </div>
+
+               <div class="horizontal1-box">
+                <div class="horizontal1"></div>
+               </div>
+
+               <div  class="box2">
+				   <div class="inner2">	
+				   	  <div class="container2">
+				        操作画笔
+			          </div>
+						<li class="marginBottoom" title='自由画笔'><span><i class="iconfont" id="pencil">&#xe607;</i></span><div class="horizontal"></li>
+						<div class="vertical"></div>
+						<li class="marginBottoom" title="线条"><span><i class="iconfont" id="line">&#xe63f;</i></span><div class="horizontal"></li>
+						<li class="marginBottoom" title="矩形"><span><i class="iconfont" id="rect">&#xe633;</i></span><div class="horizontal"></li>
+						<div class="vertical"></div>
+						<li class="marginBottoom" title="圆形"><span><i class="iconfont" id="arc">&#xe644;</i></span><div class="horizontal"></li>
+						<li title="多边形"><span><i class="iconfont" id="poly">&#xe601;</i></span></li>
+						<div class="vertical"></div>
+						<li title="多角形"><span><i class="iconfont" id="polygon">&#xe606;</i></span></li>
+				   </div>				   
+			  </div>
+
+			  <div class="horizontal1-box">
+			   <div class="horizontal1"></div>
+			  </div>
+
+			   <div  class="box3">
+				   <div class="inner3">
+				   	 <div class="container3">
+				        操作样式
+			          </div>
+						<li class="marginBottoom" title="填充颜色">
+							<span>
+								 <i class="iconfont">	
+								   <input type="color" id="fillStyle" title="填充颜色">			
+						         </i>
+						        <div class="horizontal"> 
+					        </span>
+	                        <div class="horizontal">
+				        </li>
+	                    <div class="vertical"></div>
+						<li class="marginBottoom" title="描边颜色">
+							<span>
+								 <i class="iconfont">	
+								   <input type="color" id="strokeStyle" title="描边颜色">			
+						         </i>					         
+					        </span>
+					        <div class="horizontal">
+				        </li>		        
+						<li style='margin-top:2px;' title="填充样式"><span><i class="iconfont" id="fill">&#xe638;</i></span><div class="horizontal"></li>
+						 <div class="vertical"></div>
+						<li style='margin-top:2px;' title="描边样式"><span><i class="iconfont" id="stroke">&#xe988;</i></span><div class="horizontal"></li>
+						 <li class="rangebox" title="线条粗细"> 
+						 	<input type="range" name="points" min="1" max="10" id="lineWidth" />
+						 </li>						
+				   </div>
+			   </div>
+			</ul>
+		</div>
+		<div class="palette">
+           <div class="copy"></div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/draw.js"></script>
+<script src="js/canvas.js"></script>
+</html>
